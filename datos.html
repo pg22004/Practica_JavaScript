@@ -45,7 +45,7 @@
         <li>otoño</li>
         <li>invierno</li>
     </ul>`;
-    console.log(ul);*/
+    console.log(ul);
 
     //Numeros
     let a = 2;
@@ -76,7 +76,68 @@
     console.log(Boolean(0));
     console.log(Boolean(-5));
     console.log(Boolean(""));
-    console.log(Boolean("."));
+    console.log(Boolean("."));*/
+
+        //undefined, null y Nan
+
+    /*undefine indica que no se ha inicializado una variable
+   y que el valor esta ausente */ 
+    let indefinida;
+    console.log(indefinida);
+
+    //null significa ausencia de un valor
+    let nulo = null;
+    console.log(nulo);
+
+    //NaN Not a number
+
+    let noEsUnNumero = "hola"*3.8;
+    console.log(noEsUnNumero);
+
+    //Funcion Declarada
+
+    function esUnaFuncion(){
+        console.log("uno");
+        console.log("dos");
+        console.log("tres");
+    }
+
+        //Invocacion de funciones
+        //esUnaFuncion(); 
+
+    function unaFuncionQueDevuelveValor(){
+        console.log("uno");
+        return 19;
+        console.log("dos");
+        console.log("tres");
+        return "La funcion ha retornado una cadena de texto"
+
+    }
+
+   // let valorDeFuncion = unaFuncionQueDevuelveValor();
+   // console.log(valorDeFuncion);
+
+
+   function saludar(nombre = "Desconocido",edad = 9) {
+    console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años`);
+   }
+   saludar("Bruno", 7);
+   saludar();
+
+   //Funciones declaradas vs funciones expresadas
+   function funcionDeclarada () {
+    console.log("Esta es una funcion declarada que puede ejecutarse en cualquier parte del codigo");
+   }
+   funcionDeclarada();
+
+   
+   //Funcion anonima
+   const funcionExpresada = function (){
+     console.log("Esto es una funcion expresada es decir una funcion que se le ha asignado como valor una variable, si invocamos esta funcion antes de su definicion javascript nos dira...")
+   }
+ 
+   funcionExpresada();
+
 
     </script>
 </body>
