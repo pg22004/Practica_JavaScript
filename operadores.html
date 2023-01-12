@@ -10,7 +10,7 @@
     <script>
 
     //Operadores aritmeticos
-    
+     /*
     let a = 5 + (5 - 10) * 3;
 
     //devuelve el residuo
@@ -21,9 +21,9 @@
 
     //Operadores relacionales
     // > < >= <= == === =! !==
-  /* = asignacion de variable
+  = asignacion de variable
     == comparacion de valores
-    === comparacion de tipo de dato y valor*/
+    === comparacion de tipo de dato y valor
 
     console.log(8>9);
     console.log(8<9);
@@ -54,13 +54,103 @@
         ||Or cuando tengo 2 o mas condiciones, con que una se cumpla
          el OR sera verdadero
         &&  And cuando tengo 2 o mas condiciones, todas tienen que cumplirse
-        es decir, ser verdaderas para que And se valide*/
+        es decir, ser verdaderas para que And se valide
 
         console.log(!true);
         console.log(!false);
         console.log((9 === 9)||("9"=== 9));
         console.log((9 === 9)&&("9"=== 9));
-        console.log((9 === 9)&&("9"=== "9"));
+        console.log((9 === 9)&&("9"=== "9"));*/
+
+        //Condicionales
+         let edad = 17;
+
+        if (edad>17) {
+          console.log("eres mayor de eda");
+        }
+        else{
+            console.log("eres menor de eda"); 
+        }
+
+        if (edad>=18) {
+          console.log("eres mayor de eda");
+        }
+        else{
+            console.log("eres menor de eda"); 
+        }
+
+        if (edad<18) {
+          console.log("eres menor de eda");
+        }
+        else{
+            console.log("eres mayor de eda"); 
+        }
+
+        if (edad<=17) {
+          console.log("eres menor de eda");
+        }
+        else{
+            console.log("eres mayor de eda"); 
+        }
+
+        let hora = 20;
+        if (hora >= 0 && hora <= 5) {
+          console.log("Dejame dormir");
+        } else if (hora >= 6 && hora <= 11) {
+          console.log("Buenos dias");
+        } else if (hora >= 12  && hora <=18) {
+          console.log("Buenas tardes");
+        } else {
+          console.log("Buenas noches");
+        }
+
+        if (hora < 6) {
+          console.log("Dejame dormir");
+        } else if (hora > 5 && hora < 12) {
+          console.log("Buenos dias");
+        } else if (hora > 11  && hora < 19) {
+          console.log("Buenas tardes");
+        } else {
+          console.log("Buenas noches");
+        }
+
+        //operador ternario (condicion)? verdaero:falsa
+
+        console.log("Operador ternario");
+        let eresMayor = (edad >=18)
+        ? "Eres mayor de edad" 
+        : "Eres menor de edad";
+
+       // switch - case
+
+       let dia =5;
+
+       switch (dia) {
+        case 0:
+            console.log("Domingo");
+            break;
+            case 1: 
+              console.log("Lunes");
+              break;
+              case 2: 
+              console.log("Martes");
+              break;
+              case 3: 
+              console.log("Miercoles");
+              break;
+              case 4: 
+              console.log("Jueves");
+              break;
+              case 5: 
+              console.log("Viernes");
+              break;
+              case 6: 
+              console.log("Sabado");
+              break;
+        default:
+            console.log("El dia no existe");
+            break;
+       }
 
 
 
