@@ -76,12 +76,12 @@
     console.log(Boolean(0));
     console.log(Boolean(-5));
     console.log(Boolean(""));
-    console.log(Boolean("."));*/
+    console.log(Boolean("."));
 
         //undefined, null y Nan
 
-    /*undefine indica que no se ha inicializado una variable
-   y que el valor esta ausente */ 
+    undefine indica que no se ha inicializado una variable
+   y que el valor esta ausente
     let indefinida;
     console.log(indefinida);
 
@@ -136,7 +136,86 @@
      console.log("Esto es una funcion expresada es decir una funcion que se le ha asignado como valor una variable, si invocamos esta funcion antes de su definicion javascript nos dira...")
    }
  
-   funcionExpresada();
+   funcionExpresada(); */ 
+
+   //Arrays
+
+   const a = [];
+   const b = [1, true, "Hola", ["A","B","C", [1,2,3] ]];
+   console.log(a); 
+   console.log(b); 
+   console.log(b.length); 
+   console.log(b[2]); 
+   console.log(b[0]); 
+   console.log(b[3][2]); 
+   console.log(b[3][3][0]); 
+
+   const c = Array.of("X", "Y", "Z", 9,8,7)
+   console.log(c);
+
+   const d = Array(100).fill(false);
+   console.log(d);
+
+   //Ya no se acostumbra a trabajar de esta forma
+   const e = new Array();
+   console.log(e);
+
+   const f = new Array(1,2,3,true,false)
+   console.log(f);
+
+   const colores = ["Rojo", "Verde", "Azul"];
+   console.log(colores);
+
+   colores.push("Negro")
+   console.log(colores);
+
+   colores.pop();
+   console.log(colores);
+
+   colores.forEach(function(el, index){
+   console.log(`<li id=${index}>${el} </li>`)
+   })
+   
+
+   //objetos
+ /*dentro de un objeto a las variables se le van a llamar 
+ atributos/prpiedades y a las funciones metodos*/
+   const i = {}
+   console.log(i);
+
+   const iliana = {
+    nombre: "iliana",
+    apellido: "perez",
+    edad: 18,
+    pasatiempos:["Dormir", "Hacer ejercicio"],
+    soltera:true,
+    contacto:{
+        email:"iliana@gmail.com",
+        twitter: "@ilianap",
+        movil: "50312345678"
+         },
+      saludar:function () {
+      console.log(`Hola :)`)
+      },
+      decirMiNombre:function() {
+        console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo 
+        ${this.edad} años`)
+      }
+   }
+
+   console.log(iliana);
+   console.log(iliana["nombre"]);
+   console.log(iliana["apellido"]);
+   console.log(iliana.edad)
+   console.log(iliana.pasatiempos[0]);
+   console.log(iliana.contacto.twitter);
+   iliana.saludar();
+   iliana.decirMiNombre();
+
+   console.log(Object.keys(iliana))
+   console.log(Object.values(iliana))
+   console.log(iliana.hasOwnProperty("nombre"));
+   console.log(iliana.hasOwnProperty("nacimiento"));
 
 
     </script>
